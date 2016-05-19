@@ -1,0 +1,35 @@
+[
+  {
+    "thing": "fruits",
+    "nestedThings": [
+      {
+        "thing": "apple"
+      },
+      {
+        "thing": "banana"
+      }
+    ]
+  },
+  {
+    "thing": "animals",
+    "nestedThings": [
+      {
+        "thing": "cow"
+      },
+      {
+        "thing": "dog"
+      }
+    ]
+  },
+  {
+    "thing": "stuff",
+    "nestedThings": [
+      {
+        "thing": "pencils"
+      },
+      {
+        "thing": "paper"
+      }
+    ]
+  }
+]

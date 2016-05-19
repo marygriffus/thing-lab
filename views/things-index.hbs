@@ -1,0 +1,13 @@
+{{#each things}}
+<h3><a href="/things/{{this.thing}}">{{this.thing}}</a></h3>
+<ul>
+  {{#each this.nestedThings}}
+  <li>{{this.thing}}</li>
+  {{/each}}
+</ul>
+{{/each}}
+
+<form action="things" method="post">
+  <input type="text" placeholder="Thing" name="thing[thing]" /><br>
+  <button type="submit">Add a thing</button>
+</form>

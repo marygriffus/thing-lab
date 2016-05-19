@@ -1,0 +1,18 @@
+<h3>So here's the thing:</h3>
+
+<h3>{{thing.thing}}</h3>
+
+<form action="/things/{{thing.thing}}" method="post">
+  <input type="text" placeholder="{{thing.thing}}" name="thing[thing]" /><br>
+  <button type="submit">Edit the thing</button>
+</form>
+
+<ul>
+  {{#each thing.nestedThings}}
+  <li>{{this.thing}}</li>
+  {{/each}}
+  <form action="/things/{{thing.thing}}/add" method="post">
+    <input type="text" placeholder="Nest a thing" name="subthing[thing]" />
+    <button type="submit">Nest the thing</button>
+  </form>
+</ul>
